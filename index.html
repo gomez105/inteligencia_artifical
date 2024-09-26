@@ -41,10 +41,88 @@
     <img src="784pixeles.PNG">
     <br> 
     <p>una neurona almacena y guarda un numero entre 0 y 1</p>
-    <h1>inteligencia artifical clase 12 septiembre 2024 (clase#3)</h1>
+    <h1>inteligencia artifical clase 12 septiembre 2024 (clase#4)</h1>
     <p>en el dia de hoy aprendimos un poco mas sobre las redes neuronales con un ejercicio practico en google colab con python</p>
     <img src="codigo1.PNG">
     <img src="codigo3.PNG">
     <img src="codigo2.PNG">
+    <h1>inteligencia artifical clase 19 septiembre 2024 (clase#5)</h1>
+    <h1>exposicion de leyner construyendo modelos de lenguajes</h1>
+    <p> en el dia de hoy nos explico sobre los tipos de los modelos de lenguajes menciono los modelos basados en reglas que practicamente se utiliza para poder procesar el lenguaje,tambien hablo sobre los modelos estadisticos y los modelos de aprendizaje profundo. una de las ventajas que tiene es la versatilidad en las aplicaciones y tambien mejora continua.</p>
+        <p>vimos tambien el funcionamiento de unos algoritmos  greedy best-first search</p>
+        <h1>inteligencia artifical clase 26 septiembre 2024 (clase#6)</h1>
+        <p>explicacion del codigo punto #4</p>
+        <br>
+        <p>primero que todo importamos las librerias el tensorflow es una libreria de inteligencia artifical y la libreria numpy para trabajar facilmente los arreglos numericos</p>
+
+        <img src="libreria.PNG">
+        <br>
+        <p>despues creamos un arreglo de numeros donde colocaremos las 7 entradas de numeros celsius.despues creamos otro arreglo para ver los resultados fahrenheit</p>
+        <img src="a1.PNG">
+        <br>
+        <p>luego creamos variable de tipo capa densa que tiene conexionescon neuronas,las registramos y le indicamos las unidades o neuronas de la capa. en la capa de salida solamente utilizamos una neurona.luego creamos un modelo secuencial para la paca que creamos.la dejamos comentada.</p>
+        <br>
+        <img src="a2.PNG">
+        <br>
+        <p>Esta línea crea una capa densa (totalmente conectada) llamada oculta1,esta capa contiene 3 neuronas y  recibe entradas con una dimensión, es decir, cada dato de entrada será un valor escalar. la siguiente linea de codigo define otra capa densa llamada oculta2 con 3 neuronas.luego definimos la capa de salida que solamente contiene una neurona de salida.crea un modelo secuencial llamado modelo, en el cual las capas se conectan de forma secuencial en el orden especificado: primero oculta1, luego oculta2, y finalmente salida.</p>
+        <br>
+        <img src="a3.PNG">
+        <br>
+        <p>luego  en el modelo compilamos y eliginos dos propiedades el optimizer y la funcion de perdida y en el optimizador utilizaremos un algoritmo llamado adam y le permite a la red como ajustar los pesos para que sea mas eviciente.para la siguiente linea de codigo utilizaremos una funcion llamada mean_squared_error.</p>
+        <br>
+        <img src="a4.PNG">
+        <br>
+        <p>imprimimos comenzando el entrenamiento ,luego vamos a entrenar el modelo y utilizaremos la funcion fit y le indicamos los datos de entrada de los grados celsius y farenheit y seguidamente imprimimos el modelo entrenado.  </p>
+        <br>
+        <img src="a5.PNG">
+        <br>
+        <p>luego miramos el resultado de la funcion de perdidaseguidamente de eso ya podemos visualizar la grafica, se hace la importacion de la libreria de matplot.pyplot y la renombramos con plt.
+              </p>
+              <br>
+              <img src="a6.PNG">
+              <br>
+              <p>seguidamente hacemos la imprecion de una prediccion ,en la variable resultado tenemos el modelo y le colocamos una prediccion de 100.0 y seguidamente umplimimos el resultado.</p>
+              <br>
+              <img src="a7.PNG">
+              <br>
+              <p>luego imprimimos las variables internas del modelo imprimimos oculta1,ocultado y la salida y ps obtenemos los resultados.</p>
+              <br>
+              <img src="a8.PNG">
+              <br>
+              <p>punto #3</p>
+              <table border="1">
+                <tr>
+                    <td>para el laberinto #1:</td>
+                    <td> con el algoritmo dfs recorrio un total de 265 nodos</td>
+                </tr>
+                <tr>
+                    <td>para el laberinto #1: </td>
+                    <td>con el algoritmo bfs recorrio un total de 319 nodos</td>
+                </tr>
+                <tr>
+                    <td>para el laberinto #2:</td>
+                    <td> con el algoritmo dfs recorrio un total de 227 nodos</td>
+                </tr>
+                <tr>
+                    <td>para el laberinto #2: </td>
+                    <td>con el algoritmo bfs recorrio un total de 319 nodos</td>
+                </tr>
+                <tr></tr>
+                    <td>para el laberinto #1:</td>
+                    <td>        <img src="a9.PNG"> </td>
+                </tr>
+                <tr></tr>
+                <td>para el laberinto #1:</td>
+                <td>        <img src="a10.PNG"> </td>
+            </tr>
+            <tr></tr>
+            <td>para el laberinto #2:</td>
+            <td>        <img src="a11.PNG"> </td>
+        </tr>
+        <tr></tr>
+        <td>para el laberinto #2:</td>
+        <td>        <img src="a12.PNG"> </td>
+    </tr>
+            </table>
 </body>
 </html>
